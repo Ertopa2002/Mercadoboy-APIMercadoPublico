@@ -1,0 +1,9 @@
+{
+  "patricio": {
+    "usuario": "patricio",
+    "giros": ["Venta Alimentos", "Baños químicos"],
+    "palabras_clave": ["alimentos", "baños químicos"],
+    "regiones": [],
+    "tipos": []
+  }
+}

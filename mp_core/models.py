@@ -103,6 +103,7 @@ class PerfilUsuario(BaseModel):
     """Preferencias por defecto de un usuario para filtrar ("mis rubros")."""
 
     usuario: str
+    giros: list[str] = Field(default_factory=list, description="Ej. 'Venta Alimentos'")
     regiones: list[int] = Field(default_factory=list, description="Vacío = todo Chile")
     palabras_clave: list[str] = Field(default_factory=list)
     prefijos_onu: list[str] = Field(
