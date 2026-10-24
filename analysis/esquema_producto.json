@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Exigencias por producto (Compra Ágil / ítem de licitación)",
+  "description": "La IA lo llena leyendo nombre y descripción del producto y de la compra. Si un dato no aparece: null. Prohibido inferir.",
+  "type": "object",
+  "properties": {
+    "codigo_compra": {"type": "string"},
+    "producto": {"type": "string", "description": "Descripción del producto tal como viene"},
+    "marca": {"type": ["string", "null"], "description": "Marca(s) mencionada(s)"},
+    "exigencia_marca": {
+      "enum": ["exacta", "alternativas", "o_similar", "referencial", null],
+      "description": "exacta: solo esa marca · alternativas: una de varias (ej. 'tork o elite') · o_similar: acepta equivalente explícitamente · referencial: 'tipo X', la marca es solo ejemplo"
+    },
+    "presentacion": {"type": ["string", "null"], "description": "Formato, peso o volumen (ej. '600 ml', 'caja 100 un')"},
+    "vencimiento": {"type": ["string", "null"], "description": "Exigencia de vencimiento tal como se pide"},
+    "vencimiento_meses_min": {"type": ["integer", "null"]},
+    "condiciones": {"type": "array", "items": {"type": "string"}, "description": "Ej. sin sellos, sin gluten, carta de canje, ficha técnica, cotización formal"},
+    "remite_a_adjunto": {"type": "boolean", "description": "true si dice que las especificaciones están en un archivo adjunto"},
+    "evidencia": {"type": "string", "description": "Fragmento textual de donde salió cada dato"}
+  },
+  "required": ["codigo_compra", "producto", "marca", "exigencia_marca", "vencimiento", "remite_a_adjunto", "evidencia"]
+}

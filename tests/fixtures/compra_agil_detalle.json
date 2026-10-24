@@ -1,0 +1,72 @@
+{
+  "success": "OK",
+  "trace": null,
+  "payload": {
+    "codigo": "3287-534-COT26",
+    "nombre": "MATERIALES REPARACIÓN Y MANTENIMIENTO \"ASOSER\"",
+    "descripcion": "ADQUISICIÓN DE FOSA SÉPTICA PARA CENTRO CULTURAL PABLO DE ROCKA.",
+    "estado": {
+      "id_estado": 2,
+      "codigo": "publicada",
+      "glosa": "Publicada"
+    },
+    "convocatoria": {
+      "estado_convocatoria": 1,
+      "descripcion": "Primer llamado",
+      "fecha_cierre_primer_llamado": "2026-10-26 10:00",
+      "fecha_cierre_segundo_llamado": "2026-10-29 02:51"
+    },
+    "fechas": {
+      "fecha_publicacion": "2026-10-23 17:08",
+      "fecha_cierre": "2026-10-26 10:00",
+      "fecha_ultimo_cambio": "2026-10-23 17:10",
+      "fecha_cancelacion": null
+    },
+    "entrega": {
+      "direccion_entrega": "CIRO BOETTO SN, BODEGA MUNICIPAL LICANTÉN.",
+      "plazo_entrega_dias": 1
+    },
+    "documentos": [],
+    "presupuesto": {
+      "tipo_presupuesto": "Estimado",
+      "moneda": "CLP",
+      "presupuesto_estimado": 700000,
+      "monto_disponible": 700000,
+      "monto_disponible_clp": 700000,
+      "valor_cambio_moneda": null,
+      "fecha_cambio_moneda": null
+    },
+    "id_orden_compra": null,
+    "institucion": {
+      "organismo_comprador": "I MUNICIPALIDAD DE LICANTEN",
+      "rut": "69.100.500-3",
+      "unidad_compra": "Departamento de Finanzas",
+      "region": 7,
+      "nombre_region": "Región del Maule "
+    },
+    "productos_solicitados": [
+      {
+        "codigo_producto": 47131703,
+        "nombre": "Recipientes para residuos sanitarios",
+        "descripcion": "FOSA SEPTICA HORIZONTAL DE 3250 LT",
+        "cantidad": 1,
+        "unidad_medida": "EA"
+      }
+    ],
+    "proveedores_cotizando": [],
+    "resumen": {
+      "multa_sancion": 1,
+      "total_ofertas_recibidas": 0,
+      "total_demandas": 0
+    },
+    "motivos": {
+      "motivo_cancelacion": null,
+      "motivo_desierta": null
+    },
+    "flags": {
+      "considera_requisitos_medioambientales": false,
+      "considera_requisitos_impacto_social_economico": false
+    }
+  },
+  "errors": null
+}

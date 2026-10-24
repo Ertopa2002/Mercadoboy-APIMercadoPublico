@@ -1,0 +1,49 @@
+{
+  "codigo": "1431291-105-COT26",
+  "nombre": "parches o electrodos de reemplazo para los desfibriladores externos automáticos (DEA) disponibles en el edificio",
+  "estado": {
+    "id_estado": 2,
+    "codigo": "publicada",
+    "glosa": "Publicada"
+  },
+  "convocatoria": {
+    "estado_convocatoria": 1,
+    "descripcion": "Primer llamado"
+  },
+  "documentos": [
+    {
+      "id": 2033587,
+      "nombre": "Adquisición de parches o electrodos para desfibriladores externos.pdf"
+    }
+  ],
+  "fechas": {
+    "fecha_publicacion": "2026-10-23 17:08",
+    "fecha_cierre": "2026-10-29 12:00",
+    "fecha_ultimo_cambio": "2026-10-23T17:10:00.313Z",
+    "fecha_cierre_primer_llamado": "2026-10-29T12:00:00Z",
+    "fecha_cierre_segundo_llamado": "2026-11-04T06:51:33.640Z"
+  },
+  "montos": {
+    "moneda": "CLP",
+    "monto_disponible": 700000,
+    "monto_disponible_clp": 700000
+  },
+  "institucion": {
+    "organismo_comprador": "CORPORACION TEATRO REGIONAL DEL BIO-BIO",
+    "rut": "65.079.385-4",
+    "unidad_compra": "CORPORACION TEATRO REGIONAL DEL BIO-BIO",
+    "region": 8,
+    "nombre_region": "Región del Biobío "
+  },
+  "resumen": {
+    "total_ofertas_recibidas": 0
+  },
+  "motivos": {
+    "motivo_cancelacion": null,
+    "motivo_desierta": null,
+    "motivo_seleccion": null
+  },
+  "links": {
+    "detalle": "/v2/compra-agil/1431291-105-COT26"
+  }
+}

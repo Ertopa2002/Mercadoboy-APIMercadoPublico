@@ -1,0 +1,835 @@
+[
+  {
+    "codigo": "2432-846-COT26",
+    "nombre": "SOL769-DIDECO-AGUA MINERAL",
+    "descripcion": "SOL769-DIDECO-AGUA MINERAL",
+    "productos": [
+      {
+        "codigo_producto": 50202310,
+        "nombre": "Agua mineral",
+        "descripcion": "AGUA MINERAL SIN GAS 600ML. ESPECIFICACIONES EN ARCHIVO ADJUNTO.",
+        "cantidad": 1000,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "2432-845-COT26",
+    "nombre": "SOL767-DIDECO-SERVICIO DE TRASLADO DE ESTUDIANTE DENTRO DE LA COMUNA.",
+    "descripcion": "SOL767-DIDECO-SERVICIO DE TRASLADO DE ESTUDIANTE DENTRO DE LA COMUNA.",
+    "productos": [
+      {
+        "codigo_producto": 81102202,
+        "nombre": "Transporte urbano",
+        "descripcion": "SERVICIO DE TRASLADO DE ESCOLARES EN EL INTERIOR DE LA COMUNA CON CAPACIDAD DE 40 PASAJEROS. TERMINOS DE REFERENCIA EN ARCHIVO ADJUNTO.",
+        "cantidad": 1,
+        "unidad_medida": "GL"
+      }
+    ]
+  },
+  {
+    "codigo": "2107-314-COT26",
+    "nombre": "ABARROTES",
+    "descripcion": "productos solicitados por unidad de logistica para reposicion de stock.",
+    "productos": [
+      {
+        "codigo_producto": 10151802,
+        "nombre": "Semillas o almácigos de vainilla",
+        "descripcion": "ESENCIA DE VAINILLA 100-155 ml\n",
+        "cantidad": 2,
+        "unidad_medida": "VI"
+      },
+      {
+        "codigo_producto": 50121538,
+        "nombre": "Pescado estable sin refrigerar",
+        "descripcion": "JUREL DRENADO 425 grs (tipo salmon)\n",
+        "cantidad": 72,
+        "unidad_medida": "JR"
+      },
+      {
+        "codigo_producto": 50131702,
+        "nombre": "Productos de mantequilla o leche en conserva",
+        "descripcion": "MANJAR 400 GRS\n",
+        "cantidad": 24,
+        "unidad_medida": "POTE"
+      },
+      {
+        "codigo_producto": 50131702,
+        "nombre": "Productos de mantequilla o leche en conserva",
+        "descripcion": "MANJAR SIN AZUCAR 400 grs\n",
+        "cantidad": 30,
+        "unidad_medida": "POTE"
+      },
+      {
+        "codigo_producto": 50161511,
+        "nombre": "Chocolate o sucedáneo de chocolate",
+        "descripcion": "CACAO AMARGO 150 grs\n",
+        "cantidad": 10,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50171552,
+        "nombre": "Mezcla de condimentos",
+        "descripcion": "ROMERO DESHIDRATADO 10 grs\n",
+        "cantidad": 10,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50171552,
+        "nombre": "Mezcla de condimentos",
+        "descripcion": "OREGANO ENTERO BOLSA 20 grs\n",
+        "cantidad": 25,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50181905,
+        "nombre": "Galletas dulces o pastelitos",
+        "descripcion": "GALLETAS TRITON VAINILLA 116 GR.",
+        "cantidad": 30,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50181905,
+        "nombre": "Galletas dulces o pastelitos",
+        "descripcion": "GALLETA OBLEA 140 GRS.",
+        "cantidad": 30,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50181909,
+        "nombre": "Galletas saladas",
+        "descripcion": "GALLETAS DE ARRROZ 90-150 grs\n",
+        "cantidad": 6,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50192401,
+        "nombre": "Mermeladas, gelatinas, conservas de fruta",
+        "descripcion": "DULCE MEMBRILLO SIN AZUCAR 330 grs\n",
+        "cantidad": 10,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192401,
+        "nombre": "Mermeladas, gelatinas, conservas de fruta",
+        "descripcion": "JALEAS POLVO CORRIENTES 100 GRS piña",
+        "cantidad": 120,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50192401,
+        "nombre": "Mermeladas, gelatinas, conservas de fruta",
+        "descripcion": "JALEAS POLVO CORRIENTES 100 GRS naranja\n",
+        "cantidad": 120,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50192902,
+        "nombre": "Pasta o tallarines naturales estables sin refrigerar",
+        "descripcion": "TALLARIN DE ARROZ 400 grs\n",
+        "cantidad": 10,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "JUGO NECTAR 1.5 LTS durazno\n",
+        "cantidad": 12,
+        "unidad_medida": "VI"
+      },
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "JUGO NECTAR 1.5 LTS FRUTILLA\n",
+        "cantidad": 12,
+        "unidad_medida": "VI"
+      },
+      {
+        "codigo_producto": 50221001,
+        "nombre": "Granos de Legumbres",
+        "descripcion": "LENTEJAS ROJAS",
+        "cantidad": 10,
+        "unidad_medida": "KGM"
+      }
+    ]
+  },
+  {
+    "codigo": "4291-1541-COT26",
+    "nombre": "SERVICIO DE COFFEE 120 PERSONAS",
+    "descripcion": "SERVICIO DE COFFEE 120 PERSONAS",
+    "productos": [
+      {
+        "codigo_producto": 90101603,
+        "nombre": "Servicios de catering",
+        "descripcion": " Se requiere un servicio de coffe break para 120 personas con las siguientes caracteristicas:\n•\tBebestible\n•\tBocaditos/pastelitos\n•\tGalletas y/o frutas\n\n\nEl servicio de la actividad se requerirá para el 28 de octubre en horario 15:00 pm.  para coordinaciones.\nLugar Auditorio C.E.I.A. Doctor Anotnio Rendic I. B-12, Av. Grecia 1910, Antofagasta, Chile.\nCOTIZACIN FORMAL\nRESOLUCION SANITARIA\n\n\n",
+        "cantidad": 1,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "1057539-4706-COT26",
+    "nombre": "ASISTENTE DE VOZ ",
+    "descripcion": "ASISTENTE DE VOZ SIMILAR ALEXA ",
+    "productos": [
+      {
+        "codigo_producto": 43221520,
+        "nombre": "Equipo de reconocimiento de voz interactivo",
+        "descripcion": "ASISTENTE DE VOZ SIMILAR ALEXA",
+        "cantidad": 1,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "1658-1614-COT26",
+    "nombre": "S31-26/DEPARTAMENTO DE PROGRAMAS SOCIALES/ADQUISICIÓN DE COLACIONES Y OTROS PARA PROGRAMA HPV I",
+    "descripcion": "ADQUISICIÓN DE COLACIONES Y OTROS PARA PROGRAMA HPV I, SEGUN ESPECIFICACIONES TECNICAS ADJUNTAS",
+    "productos": [
+      {
+        "codigo_producto": 50181909,
+        "nombre": "Galletas saladas",
+        "descripcion": "ADQUISICIÓN DE COLACIONES Y OTROS PARA PROGRAMA HPV I, SEGUN ESPECIFICACIONES TECNICAS ADJUNTAS",
+        "cantidad": 1,
+        "unidad_medida": "GL"
+      }
+    ]
+  },
+  {
+    "codigo": "4894-343-COT26",
+    "nombre": "Utensilios servicio de café (vasos, revolvedores, cucharas, platos)",
+    "descripcion": "Utensilios servicio de café (vasos, revolvedores de madera, cucharas de madera y platos de cartón=",
+    "productos": [
+      {
+        "codigo_producto": 52151502,
+        "nombre": "Platos desechables domésticos",
+        "descripcion": "Plato biodegradable redondo caña de azúcar 18 cms.  Se debe adjuntar cotización formarl",
+        "cantidad": 500,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 52151504,
+        "nombre": "Tazas o vasos desechables domésticos",
+        "descripcion": "Vasos desechables de cartón/polipapel para bebidas calientes capacidad 240 cc (bolsas de 50 unidades). Se debe adjuntar cotización formal ",
+        "cantidad": 20,
+        "unidad_medida": "BG"
+      },
+      {
+        "codigo_producto": 52151505,
+        "nombre": "Agitadores domésticos de usar y tirar",
+        "descripcion": "Revolvedores de madera 14 cms. (paquetes de 100 unidades).  Se debe adjuntar cotización formal",
+        "cantidad": 10,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 52151617,
+        "nombre": "Cucharas de madera de uso doméstico",
+        "descripcion": " Cucharas de té de madera biodegradable (paquetes de 100 unidades). Se debe adjuntar cotización formal",
+        "cantidad": 10,
+        "unidad_medida": "PK"
+      }
+    ]
+  },
+  {
+    "codigo": "1057547-2403-COT26",
+    "nombre": "961_CARNES ROJAS",
+    "descripcion": "SE SOLICITA FICHA TECNICA Y COTIZACION PARA SU EVALUACION + EL TELEFONO DE CONTACTO, EL PROVEEDOR DEBE CONSIDERAR STOCK DISPONIBLE Y DESPACHO PAGADO EN SU OFERTA, NO SE ACEPTARÁN PROPUESTAS CON DESPACHO A CARGO DEL HOSPITAL BASE DE VALDIVIA. NO SE ACEPTAN ENTREGA DE ARTICULOS SIN DOCUMENTACION CORRESPONDIENTE, EL PROVEEDOR ADJUDICADO DEBERA ENVIAR DATOS DE CUENTA DE PAGO EN SU COTIZACION.SE PRIORIZARA COTIZACIONES DE PROVEEDORES LOCALES DEBIDO A QUE LOS INSUMOS DEBEN ESTAR EN CONDICIONES DE ENTR",
+    "productos": [
+      {
+        "codigo_producto": 50111510,
+        "nombre": "Carne de ave o carne fresca",
+        "descripcion": "6580943\tPosta juliana (kg)\n",
+        "cantidad": 90,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50111510,
+        "nombre": "Carne de ave o carne fresca",
+        "descripcion": "6580801\tPosta entera (kg)\n",
+        "cantidad": 130,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50112001,
+        "nombre": "Carnes frescas procesadas y preparadas",
+        "descripcion": "6580944\tPosta molida (kg)\n",
+        "cantidad": 240,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50112001,
+        "nombre": "Carnes frescas procesadas y preparadas",
+        "descripcion": "6580800\tCarne molida corriente\n",
+        "cantidad": 40,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50112001,
+        "nombre": "Carnes frescas procesadas y preparadas",
+        "descripcion": "6580841\tJamon de pechuga de pavo (kg)\n",
+        "cantidad": 80,
+        "unidad_medida": "KGM"
+      }
+    ]
+  },
+  {
+    "codigo": "1057547-2402-COT26",
+    "nombre": "961_CARNES BLANCAS",
+    "descripcion": "SE SOLICITA FICHA TECNICA Y COTIZACION PARA SU EVALUACION + EL TELEFONO DE CONTACTO, EL PROVEEDOR DEBE CONSIDERAR STOCK DISPONIBLE Y DESPACHO PAGADO EN SU OFERTA, NO SE ACEPTARÁN PROPUESTAS CON DESPACHO A CARGO DEL HOSPITAL BASE DE VALDIVIA. NO SE ACEPTAN ENTREGA DE ARTICULOS SIN DOCUMENTACION CORRESPONDIENTE, EL PROVEEDOR ADJUDICADO DEBERA ENVIAR DATOS DE CUENTA DE PAGO EN SU COTIZACION.SE PRIORIZARA COTIZACIONES DE PROVEEDORES LOCALES DEBIDO A QUE LOS INSUMOS DEBEN ESTAR EN CONDICIONES DE ENTR",
+    "productos": [
+      {
+        "codigo_producto": 50111510,
+        "nombre": "Carne de ave o carne fresca",
+        "descripcion": "6580816\tPulpa de cerdo - REVISAR ADJUNTO\n",
+        "cantidad": 80,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50111510,
+        "nombre": "Carne de ave o carne fresca",
+        "descripcion": "6580942\tPechuga deshuesada pollo - REVISAR ADJUNTO\n",
+        "cantidad": 550,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50111510,
+        "nombre": "Carne de ave o carne fresca",
+        "descripcion": "6580810\tTrutro corto de pollo - REVISAR ADJUNTO\n",
+        "cantidad": 100,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50112001,
+        "nombre": "Carnes frescas procesadas y preparadas",
+        "descripcion": "6581102\tCarne molida de pavo - REVISAR ADJUNTO\n",
+        "cantidad": 140,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50112001,
+        "nombre": "Carnes frescas procesadas y preparadas",
+        "descripcion": "6580099\tCarne picada de pavo - REVISAR ADJUNTO\n",
+        "cantidad": 100,
+        "unidad_medida": "KGM"
+      }
+    ]
+  },
+  {
+    "codigo": "617807-2446-COT26",
+    "nombre": "HAAV COMPRA DE ALIMENTOS MEMO N°111",
+    "descripcion": "BODEGA CENTRAL\nSOLICITUD: MEMO N° 111 \nSERVICIO/DEPENDENCIA: ALIMENTACION \nITEM PRESUPUESTARIO: 2201001001\nENVIAR PRODUCTOS CON GUIA DE DESPACHO HORARIO RECEPCION BODEGA LUNES A JUEVES DE 9:00 A 16:00 HRS VIERNES 9:00 A 15:00 HRS FUERA DE ESTE HORARIO NO SE RECIBIRAN PRODUCTOS\n",
+    "productos": [
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "ARROZ SIN GLUTEN BLANCO",
+        "cantidad": 2,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FIDEO DEDALES 250 GRS",
+        "cantidad": 96,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FIDEO SPAGUETTI 400 GRS",
+        "cantidad": 75,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FIDEO INTEGRAL 400 GRS",
+        "cantidad": 37,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FIDEOS MARIPOSA N°93 250 GRS",
+        "cantidad": 192,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FIDEOS SOPA DIUCA 250GRS",
+        "cantidad": 48,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FIDEOS S/GLUTEN 400 GRS APROX",
+        "cantidad": 3,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FIDEO TALLARIN N°87 400 GRS",
+        "cantidad": 50,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "FLAN EN POLVO LIBRE DE GLUTEN (DIFERENTES SABORES)",
+        "cantidad": 6,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "TE DE HIERVA SURTIDO SACHET (CAJA DE 100 UD)",
+        "cantidad": 2,
+        "unidad_medida": "BX"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "LECHE EN POLVO 18% GRASA 1KG",
+        "cantidad": 67,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "SABORIZANTE DE LECHE 180 GRS (CHOCOLATE)",
+        "cantidad": 6,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "SABORIZANTE DE LECHE 180 GRS (FRUTILLA)",
+        "cantidad": 2,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "PURE DESHIDRATADO LIBRE DE GLUTEN",
+        "cantidad": 1,
+        "unidad_medida": "KGM"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "MANJAR PORCIONADO INDIVIDUAL 20 GRS",
+        "cantidad": 1000,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "VAINILLA EN BOTELLA DE LITRO",
+        "cantidad": 2,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50192602,
+        "nombre": "Papas, arroz, pastas u otros acompañamientos preparados congelados",
+        "descripcion": "LECHE NATURAL SIN SABOR INDIVIDUAL 200 CC",
+        "cantidad": 36,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "4894-341-COT26",
+    "nombre": "Insumos Servicio de café Decanato",
+    "descripcion": "Insumos servicio de café decanato",
+    "productos": [
+      {
+        "codigo_producto": 50161509,
+        "nombre": "Productos de edulcorantes o azúcares naturales",
+        "descripcion": "Endulzante Líquido Daily Stevia 270 ml",
+        "cantidad": 20,
+        "unidad_medida": "BO"
+      },
+      {
+        "codigo_producto": 50161509,
+        "nombre": "Productos de edulcorantes o azúcares naturales",
+        "descripcion": "Azúcar iansa formato de 1 kg.",
+        "cantidad": 10,
+        "unidad_medida": "BG"
+      },
+      {
+        "codigo_producto": 50161509,
+        "nombre": "Productos de edulcorantes o azúcares naturales",
+        "descripcion": "Azucar Iansa Sachet 5gr (500 Unidades)",
+        "cantidad": 1,
+        "unidad_medida": "BX"
+      },
+      {
+        "codigo_producto": 50161509,
+        "nombre": "Productos de edulcorantes o azúcares naturales",
+        "descripcion": "Endulzante Stevia Sachet 100 Un 50 Gr - IANSA CERO K",
+        "cantidad": 5,
+        "unidad_medida": "BX"
+      },
+      {
+        "codigo_producto": 50181905,
+        "nombre": "Galletas dulces o pastelitos",
+        "descripcion": "Galletas Mckay 40 gramos sabores surtidos (Chips Kuky, mini palmeritas, tritón mini vainilla, coco, mantequilla, mini limón, mini niza)",
+        "cantidad": 250,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50181905,
+        "nombre": "Galletas dulces o pastelitos",
+        "descripcion": "Galletas dulces surtidas presentación 125, 140 y 160 gramos paquete (Costa Frac Vainilla, Costa Frac Chocolate, tritón vainilla, costa limón, costa mantequilla, vino mackay, donuts, costa gran cereal, Galletas Costa Deli Cookies Clásica 240 g, Galletas Costa Deli Cookies chips 240 g, galletas gretel chocolate, Galletas Delicias Receta de La Abuela 220 g , Galletas Surtidas 400 g dos en uno. (15 PAQUETES DE CADA UNA Y 5 PAQUETES SURTIDOS)",
+        "cantidad": 200,
+        "unidad_medida": "PK"
+      },
+      {
+        "codigo_producto": 50201706,
+        "nombre": "Café",
+        "descripcion": "Café Haiti molido 250 gr",
+        "cantidad": 12,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50201706,
+        "nombre": "Café",
+        "descripcion": "Café Haiti en Granos 250 gr",
+        "cantidad": 10,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50201706,
+        "nombre": "Café",
+        "descripcion": "Cafe Nescafe Stick Sachet Caja 96 Unidades 1.8 Grs C/u Café",
+        "cantidad": 5,
+        "unidad_medida": "BX"
+      },
+      {
+        "codigo_producto": 50202304,
+        "nombre": "Jugos y néctar envasados",
+        "descripcion": "Jugos Nectar watts 200 ml sabores surtidos (naranja, durazno piña, manzana, damasco)",
+        "cantidad": 250,
+        "unidad_medida": "BX"
+      },
+      {
+        "codigo_producto": 50202310,
+        "nombre": "Agua mineral",
+        "descripcion": "Agua mineral sin gas cachantun 600 ml.",
+        "cantidad": 24,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "617807-2444-COT26",
+    "nombre": "HAAV COMPRA DE ALIMENTOS 20261275",
+    "descripcion": "BODEGA CENTRAL\nSOLICITUD: 20261275 \nSERVICIO/DEPENDENCIA: SEDILE \nITEM PRESUPUESTARIO: 2201001001\nENVIAR PRODUCTOS CON GUIA DE DESPACHO HORARIO RECEPCION BODEGA LUNES A JUEVES DE 9:00 A 16:00 HRS VIERNES 9:00 A 15:00 HRS FUERA DE ESTE HORARIO NO SE RECIBIRAN PRODUCTOS\n",
+    "productos": [
+      {
+        "codigo_producto": 51191603,
+        "nombre": "Soluciones de nutrición o de nutrición parenteral total (NPT)",
+        "descripcion": "fresubin 2kcal hp 500 ml easy bag x 15 ud (con carta de canje y fecha  extendida de vencimiento)",
+        "cantidad": 180,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 51191603,
+        "nombre": "Soluciones de nutrición o de nutrición parenteral total (NPT)",
+        "descripcion": "survimed opd hn 500 ml easy bag (con carta de canje y fecha  extendida de vencimiento)",
+        "cantidad": 30,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 51191603,
+        "nombre": "Soluciones de nutrición o de nutrición parenteral total (NPT)",
+        "descripcion": "nepro ap alto en proteina  (con carta de canje y fecha  extendida de vencimiento)",
+        "cantidad": 48,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 51191603,
+        "nombre": "Soluciones de nutrición o de nutrición parenteral total (NPT)",
+        "descripcion": "enterex espesante bolsa (con carta de canje y fecha  extendida de vencimiento)",
+        "cantidad": 24,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 51191603,
+        "nombre": "Soluciones de nutrición o de nutrición parenteral total (NPT)",
+        "descripcion": "proteinex o enterex en polvo",
+        "cantidad": 48,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "4894-334-COT26",
+    "nombre": " Higienico y toalla de papel Jumbo marca elite o tork",
+    "descripcion": "Toalla de papel jumbo marca tork o elite hoja simple 250 metros y papel higiénico marca tork o elite altro metraje hoja simple 4 rollos de 500 metros",
+    "productos": [
+      {
+        "codigo_producto": 14111703,
+        "nombre": "Toallas de papel",
+        "descripcion": "Toallas de papel marca tork o elite hoja simple 250 metros (2 rollos por bolsa equivale a 500 unidades). Se debe adjuntar cotización formal y marca solicitada",
+        "cantidad": 250,
+        "unidad_medida": "BG"
+      },
+      {
+        "codigo_producto": 14111704,
+        "nombre": "Papel higiénico",
+        "descripcion": "Papel higiénico marca tork o elite alto metraje hoja simple 500 metros (4 rollos por bolsa equivale a 600 unidades). Se debe adjuntar cotización formal y marca solicitada.",
+        "cantidad": 150,
+        "unidad_medida": "BG"
+      }
+    ]
+  },
+  {
+    "codigo": "1221019-90-COT26",
+    "nombre": "Servicio de Gestión y Pago de Inversión Publicitaria en Plataformas Digitales de Redes Sociales para la Corporación Municipal del Deporte de Vitacura.",
+    "descripcion": "La Gerencia de Administración y Gestión de Operaciones en conjunto con la Unidad de Comunicaciones de la Corporación tiene la  necesidad de promocionar y difundir los contenidos del evento Sport Fest Vitacura 2026 en las redes sociales de la Corporación, para ello requiere contratar un servicio que gestione y pague la inversión publicitaria en plataformas digitales de redes sociales, administrando dicho gasto de manera centralizada, ordenada y trazable, de acuerdo con los presentes términos de r",
+    "productos": [
+      {
+        "codigo_producto": 80111711,
+        "nombre": "Desarrolladores de software",
+        "descripcion": "Servicio de Gestión y Pago de Inversión Publicitaria en Plataformas Digitales de Redes Sociales, de acuerdo a lo establecido en Términos de Referencia.",
+        "cantidad": 1,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "4894-330-COT26",
+    "nombre": "Tapete Urinarios y articulos de aseo",
+    "descripcion": "\nTapete Urinario Desodorizante y artículos de aseo",
+    "productos": [
+      {
+        "codigo_producto": 10191509,
+        "nombre": "Insecticidas",
+        "descripcion": "RAID MAX SIN OLOR MARCA SC JOHNSON MATA ARAÑA.SE DEBE ADJUNTAR COTIZACIÓN FORMAL",
+        "cantidad": 2,
+        "unidad_medida": "BX"
+      },
+      {
+        "codigo_producto": 42132205,
+        "nombre": "Guantes quirúrgicos",
+        "descripcion": "GUANTES QUIRURGICO TALLA L.  SE DEBE ADJUNTAR COTIZACIÓN FORMAL",
+        "cantidad": 10,
+        "unidad_medida": "BX"
+      },
+      {
+        "codigo_producto": 47121701,
+        "nombre": "Bolsas de basura",
+        "descripcion": "ROLLOS BOLSA DE BASURA 80 X 110 X 10 MARCA SUPERIOR O SIMILAR.  SE DEBE ADJUNTAR COTIZACIÓN FORMAL",
+        "cantidad": 15,
+        "unidad_medida": "RO"
+      },
+      {
+        "codigo_producto": 47131615,
+        "nombre": "Escobillones",
+        "descripcion": "ESCOBILLÓN GRANDES SUPERFICIES VIRUTEX O SIMILAR . SE DEBE ADJUNTAR COTIZACIÓN FORMAL",
+        "cantidad": 6,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 47131705,
+        "nombre": "Accesorios para urinarios o aseos",
+        "descripcion": "Tapete Urinario Desodorizante Pequeño Anti-Salpicaduras Naranjo Mango. Se debe adjuntar cotización formal\n\n",
+        "cantidad": 36,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 47131803,
+        "nombre": "Desinfectantes domésticos",
+        "descripcion": "CLORO BIDON DE 5 LITROS MARCA AIS O SIMILAR. SE DEBE ADJUNTAR COTIZACIÓN FORMAL",
+        "cantidad": 5,
+        "unidad_medida": "BD"
+      },
+      {
+        "codigo_producto": 53131606,
+        "nombre": "Desodorantes",
+        "descripcion": "DESODORANTE AMBIENTAL MARCA WINNEX WORLD Ó AROM AROMA SURTIDO.SE DEBE ADJUNTAR COTIZACIÓN FORMAL",
+        "cantidad": 2,
+        "unidad_medida": "BX"
+      }
+    ]
+  },
+  {
+    "codigo": "1480972-756-COT26",
+    "nombre": "COLACIONES ESCUELA ATENAS ",
+    "descripcion": "Escuela Atenas ubicada en la Comuna de Olmué, requiere colaciones para el jueves 12 de diciembre, según detalle. Se requiere cotización formal con detalle de productos ofertados.",
+    "productos": [
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "Sándwisch jamón queso 175 gramos envasado tipo Daily Frech\t\t\t\n",
+        "cantidad": 283,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "Barra de cereal 30 gramos sin sellos sabores tipo Quaker\t\t\t\n",
+        "cantidad": 283,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "Botella de agua mineral sin gas 500 ml tipo Cachantún\t\t\t\n",
+        "cantidad": 283,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "Jugo individual en caja de 200 ml sin sello tipo Livean\t\t\t\n",
+        "cantidad": 283,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "Compota de fruta 90 gramos diversos sabores sin sello tipo Vivo\t\t\t\n",
+        "cantidad": 283,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202303,
+        "nombre": "Jugos y néctar concentrados",
+        "descripcion": "Fruta fresca de la estación (plátano) \t\t\t\n",
+        "cantidad": 283,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "4703-296-COT26",
+    "nombre": "COMPRA DE ALIMENTOS PARA PREMIACION 6TOS BASICOS/ COLEGIO HONDURAS/ SEP. ",
+    "descripcion": "COMPRA DE ALIMENTOS PARA PREMIACION 6TOS BASICOS/ COLEGIO HONDURAS/ SEP. OFICIO N°601\nSE REQUIEREN PARA EL DIA 30 DE OCTUBRE 2026",
+    "productos": [
+      {
+        "codigo_producto": 50202304,
+        "nombre": "Jugos y néctar envasados",
+        "descripcion": "JUGOS NECTAR SABOR DURAZNO 1.5 LITROS ",
+        "cantidad": 2,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202304,
+        "nombre": "Jugos y néctar envasados",
+        "descripcion": "JUGOS NECTAR SABOR NARANJA 1.5 LITROS",
+        "cantidad": 2,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202304,
+        "nombre": "Jugos y néctar envasados",
+        "descripcion": "JUGOS NECTAR SABOR DAMASCO 1.5 LITROS",
+        "cantidad": 2,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 50202304,
+        "nombre": "Jugos y néctar envasados",
+        "descripcion": "JUGOS NECTAR SABOR PIÑA 1.5 LITROS",
+        "cantidad": 2,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 60121513,
+        "nombre": "Pastel seco",
+        "descripcion": "TORTAS SABOR CREMA PIÑA PARA 30 PERSONAS, CUADRADAS ",
+        "cantidad": 3,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 60121513,
+        "nombre": "Pastel seco",
+        "descripcion": "PAN MOLDE CON QUESO Y JAMON. EMPACADOS INDIVIDUALES",
+        "cantidad": 60,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 60121513,
+        "nombre": "Pastel seco",
+        "descripcion": "PAN MOLDE CON QUESO FRESCO, TOMATE Y LECHUGA. EMPACADOS INDIVIDUALES",
+        "cantidad": 13,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 60121513,
+        "nombre": "Pastel seco",
+        "descripcion": "MINI CACHITOS ",
+        "cantidad": 73,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 60121513,
+        "nombre": "Pastel seco",
+        "descripcion": "MINI CHILENITOS",
+        "cantidad": 73,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 60121513,
+        "nombre": "Pastel seco",
+        "descripcion": "MINI ALFAJORES",
+        "cantidad": 73,
+        "unidad_medida": "EA"
+      },
+      {
+        "codigo_producto": 60121513,
+        "nombre": "Pastel seco",
+        "descripcion": "MINI MERENGUES",
+        "cantidad": 73,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "867990-730-COT26",
+    "nombre": "Servicio de transporte ",
+    "descripcion": "Servicio de transporte \nVicerrectoría de Vinculación con el Medio _ Financiamiento USA2393.O3:A3:I3\nADJUNTAR COTIZACIÓN DETALLADA CON TODO LO SOLICITADO:\n- INDICANDO VALOR TOTAL IVA INCLUIDO\nDE NO ADJUNTAR SU COTIZACIÓN FORMAL QUEDARÁ INADMISIBLE. \nSE ADJUNTA FORMULARIO CON ESPECIFICACIONES TÉCNICAS Y BASES DE POSTULACIÓN PARA COMPRA ÁGIL.\n\n\n\n",
+    "productos": [
+      {
+        "codigo_producto": 81141604,
+        "nombre": "Servicios de transporte",
+        "descripcion": "Se requiere transporte para traslado de 12 personas para el día miércoles 28 de octubre, al\nLiceo Hebert Vargas ubicado en la Ex Penitenciaria de Santiago.\n\nSe adjunta formulario técnico.",
+        "cantidad": 1,
+        "unidad_medida": "000"
+      }
+    ]
+  },
+  {
+    "codigo": "1549-4456-COT26",
+    "nombre": "347-6018 LENTE FOTOTERAPIA PEDIATRICO",
+    "descripcion": "347-6018 LENTE FOTOTERAPIA PEDIATRICO\nADJUNTAR FICHA TECNICA/EVALUADO POR EL HSJ",
+    "productos": [
+      {
+        "codigo_producto": 42142902,
+        "nombre": "Lentes de gafas",
+        "descripcion": "347-6018 LENTE FOTOTERAPIA PEDIATRICO",
+        "cantidad": 450,
+        "unidad_medida": "EA"
+      }
+    ]
+  },
+  {
+    "codigo": "1549-4454-COT26",
+    "nombre": " 347-0046 CASSETTE MEMBRANA P/VALVULA EXHALATORIA",
+    "descripcion": "347-0046 CASSETTE MEMBRANA P/VALVULA EXHALATORIA \nADJUNTAR FICHA TECNICA/OBLIGATORIAMENTE EVALUADO POR EL HSJ",
+    "productos": [
+      {
+        "codigo_producto": 42271718,
+        "nombre": "Accesorios para productos de administración de oxigenoterapia o sus suministros",
+        "descripcion": "347-0046 CASSETTE MEMBRANA P/VALVULA EXHALATORIA\n\n",
+        "cantidad": 10,
+        "unidad_medida": "EA"
+      }
+    ]
+  }
+]
