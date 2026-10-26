@@ -40,7 +40,10 @@ GIROS: dict[str, Giro] = {
     ),
     "banos quimicos": Giro(
         nombre="Baños químicos",
-        prefijos_onu=[],  # se completan con los códigos vistos en procesos reales
+        # 30201706 = Baños portátiles (visto en Compras Ágiles reales, 24-10-2026).
+        # 71131103 (limpieza general) también aparece, pero es demasiado genérico: lo cubren
+        # las palabras clave.
+        prefijos_onu=["30201706"],
         palabras=[
             "bano quimico",
             "banos quimicos",

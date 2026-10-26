@@ -93,3 +93,10 @@ Fuente: `scripts/probe_compra_agil.py` y `probe_compra_agil_2.py` (23-10-2026). 
 - Endpoint que responde: `https://apis.mercadopublico.cl/OCDS/data/record/{codigo}` y `/OCDS/data/tender/{codigo}` (sin ticket).
 - Para licitaciones activas (1705-26-L126 publicada hoy y 1116005-7-LE26 más antigua) responde `{"status": 404, "detail": "No se encontraron resultados."}`.
 - Conclusión provisional: OCDS no cubre procesos vigentes (o usa otro identificador). No sirve para obtener adjuntos en la POC. Queda incluido en la consulta formal a ChileCompra (`docs/consulta-chilecompra.md`, pregunta 2).
+
+# Códigos ONU por giro (24-10-2026, `scripts/codigos_onu_giro.py`)
+
+| Giro | Códigos | Observación |
+| --- | --- | --- |
+| Venta Alimentos | segmento `50` + `90101603` (catering) | Códigos mal asignados con frecuencia: siempre combinar con palabras clave |
+| Baños químicos | `30201706` (Baños portátiles) | `71131103` (limpieza general) también aparece en servicios de limpieza de baños químicos, pero es genérico: se cubre con palabras clave. Volumen bajo: 2 Compras Ágiles en 1.500 recientes y 1 licitación entre 5.141 activas |

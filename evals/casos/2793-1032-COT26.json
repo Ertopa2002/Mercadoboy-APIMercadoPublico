@@ -1,0 +1,553 @@
+{
+  "codigo": "2793-1032-COT26",
+  "origen": "compra_agil",
+  "documento": "5646 CRP ALIMENTOS ACTICIDADES OFICINA D LA MUJER.pdf (6 páginas, escaneado)",
+  "presupuesto": {
+    "monto": 3790000,
+    "impuestos": "incluidos (con IVA)",
+    "fuente": "Certificado de reserva presupuestaria, cuenta 215.22.01.001 'Para Personas' (pág. 2)",
+    "nota": "Reserva provisional; no constituye Certificado de Disponibilidad Presupuestaria (pág. 2)"
+  },
+  "plazo_entrega": {
+    "documento": "2 días (pág. 3)",
+    "portal": "1 día",
+    "discrepancia": true
+  },
+  "periodo_publicacion": "1 día (pág. 3)",
+  "condiciones": [
+    "Cotización formal y detallada con teléfono, correo y persona de contacto (pág. 5)",
+    "Movilización y despacho a cargo del oferente (pág. 5)",
+    "Multa o sanción por incumplimiento de plazo o especificaciones (pág. 5)",
+    "Pago con factura una vez entregados todos los productos (pág. 5)",
+    "Monto ofertado no puede superar 100 UTM o la oferta se rechaza (pág. 6)",
+    "Se adjudica al proveedor que oferte la totalidad, cumpla características, al menor precio y con el plazo indicado (pág. 6)",
+    "Orden de compra debe aceptarse en 2 días hábiles (pág. 6)"
+  ],
+  "vencimiento": null,
+  "productos": [
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 200,
+      "unidad": "Unidad",
+      "producto": "galleta dulce gretel chocolate bolsa 85 grs o similar",
+      "marca": "Gretel",
+      "exigencia_marca": "o_similar",
+      "presentacion": "bolsa 85 g"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 200,
+      "unidad": "Unidad",
+      "producto": "galleta dulce Costa obsesión bolsa 85 grs. o similar",
+      "marca": "Costa",
+      "exigencia_marca": "o_similar",
+      "presentacion": "bolsa 85 g"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 200,
+      "unidad": "Unidad",
+      "producto": "galleta dulce costa Donuts chocolate bolsa 100 grs o similar",
+      "marca": "Costa",
+      "exigencia_marca": "o_similar",
+      "presentacion": "bolsa 100 g"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 100,
+      "unidad": "Unidad",
+      "producto": "galleta dulce Mc Kay oblea bocado bolsa 140 grs o similar",
+      "marca": "McKay",
+      "exigencia_marca": "o_similar",
+      "presentacion": "bolsa 140 g"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 6,
+      "unidad": "Unidad",
+      "producto": "cafe instantaneo Nescafe tarro 400 grs o similar",
+      "marca": "Nescafé",
+      "exigencia_marca": "o_similar",
+      "presentacion": "tarro 400 g"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 10,
+      "unidad": "Unidad",
+      "producto": "azucar Iansa blanca granulada bolsa 1 kilo o similar",
+      "marca": "Iansa",
+      "exigencia_marca": "o_similar",
+      "presentacion": "bolsa 1 kg"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 500,
+      "unidad": "Unidad",
+      "producto": "Queque brownie Nutrabien chocolate bolsa 62 grs o similar",
+      "marca": "Nutrabien",
+      "exigencia_marca": "o_similar",
+      "presentacion": "bolsa 62 g"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 60,
+      "unidad": "Unidad",
+      "producto": "galleta salada crackelet bolsa 85 grs o similar",
+      "marca": "Crackelet",
+      "exigencia_marca": "o_similar",
+      "presentacion": "bolsa 85 g"
+    },
+    {
+      "seccion": "Actividades, jornadas, talleres u otras actividades del programa",
+      "cantidad": 100,
+      "unidad": "Unidad",
+      "producto": "jugo líquido Vivo sabor piña 190cc tripack o similar",
+      "marca": "Vivo",
+      "exigencia_marca": "o_similar",
+      "presentacion": "190 cc tripack"
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Tapaditos en pan blanco, integral y veganos: ave mayo",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Tapaditos en pan blanco, integral y veganos: churrasco queso",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Tapaditos en pan blanco, integral y veganos: jamón queso",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Tapaditos en pan blanco, integral y veganos: hummus champiñon y cebolla caramelizada",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Tapaditos en pan blanco, integral y veganos: tomate, lechuga palmito",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 36,
+      "unidad": "Unidad",
+      "producto": "Galletas mantequilla rellenas con manjar",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 36,
+      "unidad": "Unidad",
+      "producto": "Mini alfajores",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 36,
+      "unidad": "Unidad",
+      "producto": "Mini delicias",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 36,
+      "unidad": "Unidad",
+      "producto": "Mini alfajor maicena",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 36,
+      "unidad": "Unidad",
+      "producto": "Galletas craqueladas",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Mini brownie manjar",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Mini Muffins rellenos",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Medialuna rellena",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Pie de limón",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 46,
+      "unidad": "Unidad",
+      "producto": "Tartaletas de frutas",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 23,
+      "unidad": "Unidad",
+      "producto": "Mini pizzeta napolitana",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 23,
+      "unidad": "Unidad",
+      "producto": "Mini pizzeta vegetariana",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 23,
+      "unidad": "Unidad",
+      "producto": "Mini pizzeta carne tomate queso",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos para cierre de talleres",
+      "cantidad": 23,
+      "unidad": "Unidad",
+      "producto": "Mini pizzetas salame queso y aceitunas",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 80,
+      "unidad": "Unidad",
+      "producto": "Panes blancos, integral y veganos: jamón, tomate, lechuga y mayonesa",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 80,
+      "unidad": "Unidad",
+      "producto": "Panes blancos, integral y veganos: pollo queso",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 80,
+      "unidad": "Unidad",
+      "producto": "Panes blancos, integral y veganos: jamón queso",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 80,
+      "unidad": "Unidad",
+      "producto": "Panes blancos, integral y veganos: jamón serrano, queso crema y rúcula",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 80,
+      "unidad": "Unidad",
+      "producto": "Panes blancos, integral y veganos: salame queso crema",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "canapés pasta huevo ciboulette",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "canapés palmito tomate cherry",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "Mini pizzeta carne tomate queso",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "Mini pizzeta pollo tomate queso y aceitunas",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "brochetas de carne",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "galletas de mantequilla rellenas con mermeladas",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "mini alfajor color",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "mini delicias",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "mini alfajor maicena",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "galletas Red Velvet o similar",
+      "marca": null,
+      "exigencia_marca": "o_similar",
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "mini pastel de panqueque chocolate",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "mini pastel de bizcocho",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "mini rollitos de canela",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "mini masa dulce rellena con manjar",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "semi frio mix",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "cachitos rellenos",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "pie de maracuyá",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "bombones rellenos",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "kuchen manzana porción",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Día Internacional de la No Violencia contra las Mujeres",
+      "cantidad": 40,
+      "unidad": "Unidad",
+      "producto": "shot mousse tres chocolates",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos trekking",
+      "cantidad": 300,
+      "unidad": "Unidad",
+      "producto": "agua individual 200 cc o similar sin gas",
+      "marca": null,
+      "exigencia_marca": "o_similar",
+      "presentacion": "200 cc"
+    },
+    {
+      "seccion": "Alimentos trekking",
+      "cantidad": 300,
+      "unidad": "Unidad",
+      "producto": "frutas frescas variedad estación",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": null
+    },
+    {
+      "seccion": "Alimentos trekking",
+      "cantidad": 300,
+      "unidad": "Unidad",
+      "producto": "frutos secos en bolsitas de 30 grs",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": "bolsa 30 g"
+    },
+    {
+      "seccion": "Alimentos trekking",
+      "cantidad": 300,
+      "unidad": "Unidad",
+      "producto": "galletón proteína 90 grs",
+      "marca": null,
+      "exigencia_marca": null,
+      "presentacion": "90 g"
+    }
+  ],
+  "resumen": {
+    "lineas": 57,
+    "con_marca_o_similar": 11,
+    "secciones": [
+      "Actividades, jornadas, talleres u otras actividades del programa",
+      "Alimentos para cierre de talleres",
+      "Día Internacional de la No Violencia contra las Mujeres",
+      "Alimentos trekking"
+    ]
+  },
+  "validado_por_humano": false
+}
