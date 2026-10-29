@@ -16,3 +16,5 @@ build/
 evals/salidas/
 .DS_Store
 exploracion/
+*.tfplan
+Claude outputs/

@@ -151,3 +151,11 @@ def test_cupo_avisos():
     assert cupo.estado()["aviso"] == "Cupo diario sobre el 90%"
     otro_dia = Cupo(cupo.store, presupuesto=10, hoy=lambda: date(2026, 10, 25))
     assert otro_dia.usado() == 0
+
+
+def test_httpx_no_registra_urls_con_ticket():
+    import logging
+
+    import mp_core.clients  # noqa: F401
+
+    assert logging.getLogger("httpx").getEffectiveLevel() >= logging.WARNING

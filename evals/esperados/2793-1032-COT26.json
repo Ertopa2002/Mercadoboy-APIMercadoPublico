@@ -1,0 +1,594 @@
+{
+  "codigo": "2793-1032-COT26",
+  "origen": "compra_agil",
+  "validado_por": null,
+  "validado_el": null,
+  "nota": "Convertido desde evals/casos (borrador de Aptivia). Falta validación de una persona con experiencia en licitaciones.",
+  "meta": {
+    "documentos": [
+      {
+        "nombre": "5646 CRP ALIMENTOS ACTICIDADES OFICINA D LA MUJER.pdf",
+        "paginas": 6
+      }
+    ],
+    "calidad_lectura": "parcial (escaneado)",
+    "discrepancias_portal": [
+      "Plazo de entrega: documento 2 días (p. 3) vs portal 1 día"
+    ]
+  },
+  "campos": {
+    "seriedad_oferta": "No indicado",
+    "vigencia_oferta": "No indicado",
+    "requisitos_administrativos": "No indicado",
+    "requisitos_tecnicos": "No indicado",
+    "muestras": "No indicado",
+    "formularios_anexos": "No indicado",
+    "programa_integridad": "No indicado",
+    "plazos_preguntas": "No indicado",
+    "criterios_evaluacion": {
+      "valor": [
+        "Se adjudica al proveedor que oferte la totalidad, cumpla las características, al menor precio y en el plazo indicado"
+      ],
+      "fuente": {
+        "documento": "5646 CRP ALIMENTOS ACTICIDADES OFICINA D LA MUJER.pdf",
+        "pagina": 6
+      }
+    },
+    "etapas": "No indicado",
+    "garantia_fiel_cumplimiento": "No indicado",
+    "contrato": "No indicado",
+    "productos": {
+      "valor": [
+        {
+          "producto": "galleta dulce gretel chocolate bolsa 85 grs o similar",
+          "cantidad": 200,
+          "unidad": "Unidad",
+          "marca": "Gretel",
+          "exigencia_marca": "o_similar",
+          "especificacion": "bolsa 85 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "galleta dulce Costa obsesión bolsa 85 grs. o similar",
+          "cantidad": 200,
+          "unidad": "Unidad",
+          "marca": "Costa",
+          "exigencia_marca": "o_similar",
+          "especificacion": "bolsa 85 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "galleta dulce costa Donuts chocolate bolsa 100 grs o similar",
+          "cantidad": 200,
+          "unidad": "Unidad",
+          "marca": "Costa",
+          "exigencia_marca": "o_similar",
+          "especificacion": "bolsa 100 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "galleta dulce Mc Kay oblea bocado bolsa 140 grs o similar",
+          "cantidad": 100,
+          "unidad": "Unidad",
+          "marca": "McKay",
+          "exigencia_marca": "o_similar",
+          "especificacion": "bolsa 140 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "cafe instantaneo Nescafe tarro 400 grs o similar",
+          "cantidad": 6,
+          "unidad": "Unidad",
+          "marca": "Nescafé",
+          "exigencia_marca": "o_similar",
+          "especificacion": "tarro 400 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "azucar Iansa blanca granulada bolsa 1 kilo o similar",
+          "cantidad": 10,
+          "unidad": "Unidad",
+          "marca": "Iansa",
+          "exigencia_marca": "o_similar",
+          "especificacion": "bolsa 1 kg",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Queque brownie Nutrabien chocolate bolsa 62 grs o similar",
+          "cantidad": 500,
+          "unidad": "Unidad",
+          "marca": "Nutrabien",
+          "exigencia_marca": "o_similar",
+          "especificacion": "bolsa 62 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "galleta salada crackelet bolsa 85 grs o similar",
+          "cantidad": 60,
+          "unidad": "Unidad",
+          "marca": "Crackelet",
+          "exigencia_marca": "o_similar",
+          "especificacion": "bolsa 85 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "jugo líquido Vivo sabor piña 190cc tripack o similar",
+          "cantidad": 100,
+          "unidad": "Unidad",
+          "marca": "Vivo",
+          "exigencia_marca": "o_similar",
+          "especificacion": "190 cc tripack",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Tapaditos en pan blanco, integral y veganos: ave mayo",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Tapaditos en pan blanco, integral y veganos: churrasco queso",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Tapaditos en pan blanco, integral y veganos: jamón queso",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Tapaditos en pan blanco, integral y veganos: hummus champiñon y cebolla caramelizada",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Tapaditos en pan blanco, integral y veganos: tomate, lechuga palmito",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Galletas mantequilla rellenas con manjar",
+          "cantidad": 36,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini alfajores",
+          "cantidad": 36,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini delicias",
+          "cantidad": 36,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini alfajor maicena",
+          "cantidad": 36,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Galletas craqueladas",
+          "cantidad": 36,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini brownie manjar",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini Muffins rellenos",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Medialuna rellena",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Pie de limón",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Tartaletas de frutas",
+          "cantidad": 46,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini pizzeta napolitana",
+          "cantidad": 23,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini pizzeta vegetariana",
+          "cantidad": 23,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini pizzeta carne tomate queso",
+          "cantidad": 23,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini pizzetas salame queso y aceitunas",
+          "cantidad": 23,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Panes blancos, integral y veganos: jamón, tomate, lechuga y mayonesa",
+          "cantidad": 80,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Panes blancos, integral y veganos: pollo queso",
+          "cantidad": 80,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Panes blancos, integral y veganos: jamón queso",
+          "cantidad": 80,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Panes blancos, integral y veganos: jamón serrano, queso crema y rúcula",
+          "cantidad": 80,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Panes blancos, integral y veganos: salame queso crema",
+          "cantidad": 80,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "canapés pasta huevo ciboulette",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "canapés palmito tomate cherry",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini pizzeta carne tomate queso",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "Mini pizzeta pollo tomate queso y aceitunas",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "brochetas de carne",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "galletas de mantequilla rellenas con mermeladas",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "mini alfajor color",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "mini delicias",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "mini alfajor maicena",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "galletas Red Velvet o similar",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": "o_similar",
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "mini pastel de panqueque chocolate",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "mini pastel de bizcocho",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "mini rollitos de canela",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "mini masa dulce rellena con manjar",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "semi frio mix",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "cachitos rellenos",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "pie de maracuyá",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "bombones rellenos",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "kuchen manzana porción",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "shot mousse tres chocolates",
+          "cantidad": 40,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "agua individual 200 cc o similar sin gas",
+          "cantidad": 300,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": "o_similar",
+          "especificacion": "200 cc",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "frutas frescas variedad estación",
+          "cantidad": 300,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": null,
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "frutos secos en bolsitas de 30 grs",
+          "cantidad": 300,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": "bolsa 30 g",
+          "vencimiento_minimo": null
+        },
+        {
+          "producto": "galletón proteína 90 grs",
+          "cantidad": 300,
+          "unidad": "Unidad",
+          "marca": null,
+          "exigencia_marca": null,
+          "especificacion": "90 g",
+          "vencimiento_minimo": null
+        }
+      ],
+      "fuente": {
+        "documento": "5646 CRP ALIMENTOS ACTICIDADES OFICINA D LA MUJER.pdf",
+        "pagina": 4
+      }
+    },
+    "patente_seremi": "No indicado",
+    "informes_certificados": "No indicado",
+    "plazo_lugar_entrega": {
+      "valor": "2 días",
+      "fuente": {
+        "documento": "5646 CRP ALIMENTOS ACTICIDADES OFICINA D LA MUJER.pdf",
+        "pagina": 3
+      }
+    },
+    "pago_multas": {
+      "valor": [
+        "Multa o sanción por incumplimiento de plazo o especificaciones (pág. 5)",
+        "Pago con factura una vez entregados todos los productos (pág. 5)"
+      ],
+      "fuente": {
+        "documento": "5646 CRP ALIMENTOS ACTICIDADES OFICINA D LA MUJER.pdf",
+        "pagina": 5
+      }
+    },
+    "otros_requisitos": {
+      "valor": [
+        "Cotización formal y detallada con teléfono, correo y persona de contacto (pág. 5)",
+        "Movilización y despacho a cargo del oferente (pág. 5)",
+        "Monto ofertado no puede superar 100 UTM o la oferta se rechaza (pág. 6)",
+        "Se adjudica al proveedor que oferte la totalidad, cumpla características, al menor precio y con el plazo indicado (pág. 6)",
+        "Orden de compra debe aceptarse en 2 días hábiles (pág. 6)"
+      ],
+      "fuente": {
+        "documento": "5646 CRP ALIMENTOS ACTICIDADES OFICINA D LA MUJER.pdf",
+        "pagina": 5
+      }
+    }
+  }
+}

@@ -3,7 +3,8 @@
 import os
 from zoneinfo import ZoneInfo
 
-TZ = ZoneInfo(os.getenv("TZ", "America/Santiago"))
+# MP_TZ y no TZ: en Lambda la variable TZ está reservada (vale ":UTC")
+TZ = ZoneInfo(os.getenv("MP_TZ", "America/Santiago"))
 BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
 DAILY_BUDGET = int(os.getenv("MP_DAILY_BUDGET", "8000"))
 

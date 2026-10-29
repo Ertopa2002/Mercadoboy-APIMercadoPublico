@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "descripcion": "Ficha de análisis de bases: 18 campos. Cada campo es {valor, fuente} o el texto exacto \"No indicado\". fuente = {documento, pagina}.",
+  "campos": [
+    {"id": "seriedad_oferta", "nombre": "Garantía de seriedad de la oferta", "tipo": "objeto", "subcampos": {"exige": "bool", "monto": "texto", "forma": "texto", "vigencia": "texto"}, "clave": "exige"},
+    {"id": "vigencia_oferta", "nombre": "Vigencia de la oferta", "tipo": "texto", "ayuda": "Días o fecha; ej. '60 días corridos'"},
+    {"id": "requisitos_administrativos", "nombre": "Requisitos administrativos", "tipo": "lista"},
+    {"id": "requisitos_tecnicos", "nombre": "Requisitos técnicos", "tipo": "lista"},
+    {"id": "muestras", "nombre": "Muestras", "tipo": "objeto", "subcampos": {"exige": "bool", "cantidad": "texto", "lugar": "texto", "encargado": "texto", "fecha": "texto"}, "clave": "exige"},
+    {"id": "formularios_anexos", "nombre": "Formularios y anexos a presentar", "tipo": "lista"},
+    {"id": "programa_integridad", "nombre": "Programa de integridad", "tipo": "bool"},
+    {"id": "plazos_preguntas", "nombre": "Plazos de preguntas y respuestas", "tipo": "objeto", "subcampos": {"fin_preguntas": "texto", "publicacion_respuestas": "texto"}},
+    {"id": "criterios_evaluacion", "nombre": "Criterios de evaluación y ponderación", "tipo": "lista", "ayuda": "Cada ítem: 'Criterio – NN%'"},
+    {"id": "etapas", "nombre": "Etapas de apertura", "tipo": "texto", "ayuda": "'Una etapa' o 'Dos etapas', con fechas si están"},
+    {"id": "garantia_fiel_cumplimiento", "nombre": "Garantía de fiel cumplimiento", "tipo": "objeto", "subcampos": {"exige": "bool", "monto": "texto", "vigencia": "texto"}, "clave": "exige"},
+    {"id": "contrato", "nombre": "Contrato", "tipo": "objeto", "subcampos": {"exige": "bool", "duracion": "texto"}, "clave": "exige"},
+    {"id": "productos", "nombre": "Productos solicitados", "tipo": "lista_productos", "ayuda": "Cada ítem: producto, cantidad, unidad, especificacion, marca, exigencia_marca (exacta | o_similar | sin_marca), vencimiento_minimo"},
+    {"id": "patente_seremi", "nombre": "Patente y resoluciones SEREMI de Salud", "tipo": "objeto", "subcampos": {"exige": "bool", "detalle": "texto"}, "clave": "exige"},
+    {"id": "informes_certificados", "nombre": "Informes comerciales y certificados", "tipo": "lista"},
+    {"id": "plazo_lugar_entrega", "nombre": "Plazo y lugar de entrega", "tipo": "texto"},
+    {"id": "pago_multas", "nombre": "Condiciones de pago y multas", "tipo": "lista"},
+    {"id": "otros_requisitos", "nombre": "Otros requisitos", "tipo": "lista"}
+  ],
+  "meta": {
+    "codigo": "Código del proceso",
+    "documentos": "Lista de documentos leídos (nombre y páginas)",
+    "calidad_lectura": "buena | parcial (escaneado / ilegible en partes)",
+    "discrepancias_portal": "Lista de diferencias entre la ficha del portal y los documentos (ej. plazo de entrega)"
+  }
+}

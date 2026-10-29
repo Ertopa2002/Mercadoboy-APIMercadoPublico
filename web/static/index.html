@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Mercadoboy</title>
+<style>
+:root{
+  color-scheme:light;
+  --bg:#f6f6f4;--surface:#fcfcfb;--surface-2:#f0efec;--border:#e2e1dc;
+  --text:#0b0b0b;--text-2:#52514e;--muted:#7a7974;
+  --accent:#2a78d6;--accent-ink:#ffffff;
+  --s-lic:#2a78d6;--s-ca:#eb6834;--seq:#2a78d6;
+  --good:#0ca30c;--warn:#fab219;--crit:#d03b3b;
+  --radius:10px;--shadow:0 1px 2px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --bg:#121211;--surface:#1a1a19;--surface-2:#242422;--border:#33332f;
+  --text:#f0efec;--text-2:#c3c2b7;--muted:#8f8e88;
+  --accent:#3987e5;--s-lic:#3987e5;--s-ca:#d95926;--seq:#3987e5;
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#121211;--surface:#1a1a19;--surface-2:#242422;--border:#33332f;
+  --text:#f0efec;--text-2:#c3c2b7;--muted:#8f8e88;
+  --accent:#3987e5;--s-lic:#3987e5;--s-ca:#d95926;--seq:#3987e5;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+header{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 20px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:5}
+header h1{font-size:17px;margin:0;letter-spacing:-.01em}
+header .estado{color:var(--muted);font-size:12px;margin-left:auto}
+.tabs{display:flex;gap:4px;background:var(--surface-2);padding:3px;border-radius:9px}
+.tabs button{border:0;background:transparent;color:var(--text-2);padding:6px 14px;border-radius:7px;font:inherit;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--surface);color:var(--text);box-shadow:var(--shadow);font-weight:600}
+.layout{display:grid;grid-template-columns:280px 1fr;gap:16px;padding:16px 20px;max-width:1500px;margin:0 auto}
+@media (max-width:900px){.layout{grid-template-columns:1fr;padding:12px 16px}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+aside.card{padding:14px;align-self:start;position:sticky;top:64px;max-height:calc(100vh - 80px);overflow:auto}
+@media (max-width:900px){aside.card{position:static;max-height:none;display:none}aside.card.visible{display:block}}
+.solo-movil{display:none!important}
+@media (max-width:900px){.solo-movil{display:inline-flex!important}}
+.org-m{display:none}
+@media (max-width:700px){th:nth-child(2),td:nth-child(2),th:nth-child(5),td:nth-child(5){display:none}.org-m{display:block}}
+aside h2{font-size:13px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-2)}
+.campo{margin-bottom:12px}
+.campo>label,.campo>.lbl{display:block;font-size:12px;color:var(--text-2);margin-bottom:4px;font-weight:600}
+input[type=text],input[type=number],input[type=date],select{width:100%;padding:7px 9px;border:1px solid var(--border);border-radius:7px;background:var(--surface);color:var(--text);font:inherit}
+.fila2{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fila2 input{min-width:0}
+.seg{display:flex;border:1px solid var(--border);border-radius:7px;overflow:hidden}
+.seg button{flex:1;border:0;background:var(--surface);color:var(--text-2);padding:6px 4px;font:inherit;font-size:12px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--border)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.check{display:flex;align-items:center;gap:6px;font-size:13px;padding:2px 0;cursor:pointer}
+details.multi{border:1px solid var(--border);border-radius:7px;padding:6px 9px}
+details.multi summary{cursor:pointer;font-size:13px;color:var(--text-2)}
+details.multi .lista{max-height:180px;overflow:auto;margin-top:6px}
+.acciones{display:flex;gap:6px;margin-top:6px}
+a.btn{text-decoration:none;display:inline-block}
+.btn{border:1px solid var(--border);background:var(--surface);color:var(--text);padding:7px 12px;border-radius:7px;font:inherit;cursor:pointer}
+.btn.primario{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn:disabled{opacity:.5;cursor:default}
+.ayuda{font-size:11px;color:var(--muted);margin-top:3px}
+main{min-width:0}
+.barra{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.barra .total{font-weight:600}
+.barra select{width:auto}
+.tabla-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-2);background:var(--surface-2);position:sticky;top:0}
+tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--surface-2)}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th.num{text-align:right}
+.nombre{font-weight:600}
+.sub{color:var(--muted);font-size:12px}
+.chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--border);color:var(--text-2);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none}
+.dias{font-weight:600;white-space:nowrap}
+.dias.urg{color:var(--crit)}
+.paginas{display:flex;gap:6px;justify-content:flex-end;align-items:center;padding:10px}
+.vacio{padding:40px;text-align:center;color:var(--muted)}
+/* dashboard */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+@media (max-width:700px){.kpis{grid-template-columns:repeat(2,1fr)}}
+.kpi{padding:12px 14px}
+.kpi .v{font-size:24px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:12px;color:var(--text-2)}
+.graficos{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:14px}
+@media (max-width:500px){.graficos{grid-template-columns:1fr}}
+.grafico{padding:14px 16px}
+.grafico h3{font-size:14px;margin:0 0 2px}
+.grafico .desc{font-size:12px;color:var(--muted);margin-bottom:10px}
+.leyenda{display:flex;gap:14px;font-size:12px;color:var(--text-2);margin-bottom:8px}
+.leyenda span{display:inline-flex;align-items:center;gap:5px}
+.leyenda i{width:10px;height:10px;border-radius:3px;display:inline-block}
+.cols{display:flex;align-items:flex-end;gap:2px;height:170px;border-bottom:1px solid var(--border);padding-top:16px}
+.col{flex:1;display:flex;flex-direction:column-reverse;gap:2px;height:100%;position:relative;cursor:default;min-width:0}
+.col:hover{background:var(--surface-2);border-radius:4px 4px 0 0}
+.col .seg-b{width:70%;margin:0 auto;border-radius:0}
+.col .seg-b.top{border-radius:4px 4px 0 0}
+.col .val{position:absolute;top:-16px;width:100%;text-align:center;font-size:10px;color:var(--text-2)}
+.ejes{display:flex;gap:2px;margin-top:4px}
+.ejes span{flex:1;text-align:center;font-size:10px;color:var(--muted);min-width:0;overflow:hidden;white-space:nowrap}
+.hbar{display:grid;grid-template-columns:minmax(90px,38%) 1fr auto;gap:8px;align-items:center;font-size:12px;padding:3px 0;cursor:default}
+.hbar:hover{background:var(--surface-2);border-radius:5px}
+.hbar .n{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--text-2)}
+.hbar .track{height:12px}
+.hbar .bar{height:12px;background:var(--seq);border-radius:0 4px 4px 0;min-width:2px}
+.hbar .c{font-variant-numeric:tabular-nums;color:var(--text);min-width:32px;text-align:right}
+#tip{position:fixed;pointer-events:none;background:var(--text);color:var(--surface);padding:6px 9px;border-radius:6px;font-size:12px;z-index:50;display:none;max-width:280px;line-height:1.35}
+/* panel de detalle */
+.velo{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;z-index:20}
+.panel{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:var(--surface);border-left:1px solid var(--border);z-index:21;transform:translateX(100%);transition:transform .18s;overflow:auto;padding:18px 20px}
+.panel.abierto{transform:none}
+.panel h2{font-size:17px;margin:4px 0 6px}
+.panel dl{display:grid;grid-template-columns:140px 1fr;gap:6px 10px;font-size:13px}
+.panel dt{color:var(--text-2)}
+.panel dd{margin:0}
+.panel .links{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.panel h4{margin:16px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--text-2)}
+.panel ul{padding-left:18px;margin:0}
+.oculto{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <h1>Mercadoboy · Mercado Público</h1>
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="buscador">Buscador</button>
+    <button role="tab" aria-selected="false" data-tab="dashboard">Dashboard</button>
+  </div>
+  <div class="estado" id="estado">Cargando índice…</div>
+</header>
+
+<div class="layout">
+  <aside class="card" aria-label="Filtros">
+    <h2>Filtros</h2>
+    <div class="campo">
+      <label class="check"><input type="checkbox" id="f-perfil" checked> <span>Mis rubros (perfil <b id="perfil-nombre">patricio</b>)</span></label>
+      <div class="ayuda" id="perfil-ayuda"></div>
+    </div>
+    <div class="campo"><span class="lbl">Tipo de proceso</span>
+      <div class="seg" id="f-origen">
+        <button aria-pressed="true" data-v="todos">Todos</button>
+        <button aria-pressed="false" data-v="licitacion">Licitaciones</button>
+        <button aria-pressed="false" data-v="compra_agil">Compras Ágiles</button>
+      </div>
+    </div>
+    <div class="campo"><label for="f-q">Palabras clave</label>
+      <input type="text" id="f-q" placeholder="ej. colaciones, coffee break">
+      <div class="ayuda">Separa con comas. Se suman a los giros.</div>
+    </div>
+    <div class="campo"><span class="lbl">Giros</span><div id="f-giros"></div>
+      <div class="ayuda">Si no marcas ninguno, se usan los del perfil.</div></div>
+    <div class="campo"><span class="lbl">Regiones</span>
+      <details class="multi"><summary id="reg-resumen">Todo Chile</summary><div class="lista" id="f-regiones"></div></details>
+    </div>
+    <div class="campo"><label for="f-tipos">Modalidad</label>
+      <select id="f-tipos"><option value="">Todas</option></select></div>
+    <div class="campo"><span class="lbl">Monto (CLP)</span>
+      <div class="fila2"><input type="number" id="f-min" placeholder="Mínimo" min="0" step="100000"><input type="number" id="f-max" placeholder="Máximo" min="0" step="100000"></div></div>
+    <div class="campo"><label for="f-org">Organismo</label><input type="text" id="f-org" placeholder="ej. municipalidad de Huechuraba"></div>
+    <div class="campo"><span class="lbl">Cierre</span>
+      <div class="fila2"><input type="date" id="f-desde" aria-label="Cierre desde"><input type="date" id="f-hasta" aria-label="Cierre hasta"></div></div>
+    <div class="campo"><label for="f-excluir">Excluir palabras</label><input type="text" id="f-excluir" placeholder="ej. instalación eléctrica"></div>
+    <div class="campo"><label class="check"><input type="checkbox" id="f-solorubro"> Incluir los que calzan solo por código ONU</label></div>
+    <div class="acciones"><button class="btn primario" id="aplicar">Aplicar</button><button class="btn" id="limpiar">Limpiar</button></div>
+  </aside>
+
+  <main>
+    <section id="v-buscador">
+      <div class="barra">
+        <button class="btn solo-movil" data-filtros>Filtros</button>
+        <span class="total" id="total">—</span>
+        <span class="sub" id="total-sub"></span>
+        <span style="margin-left:auto" class="sub">Ordenar por</span>
+        <select id="orden">
+          <option value="relevancia">Relevancia</option>
+          <option value="cierre">Cierre más próximo</option>
+          <option value="publicacion">Más recientes</option>
+          <option value="monto">Monto mayor</option>
+        </select>
+      </div>
+      <div class="card tabla-wrap">
+        <table>
+          <thead><tr><th>Proceso</th><th>Organismo</th><th class="num">Monto</th><th>Cierre</th><th>Coincide por</th></tr></thead>
+          <tbody id="filas"></tbody>
+        </table>
+        <div class="vacio oculto" id="vacio">Sin resultados para estos filtros.</div>
+        <div class="paginas"><button class="btn" id="prev">‹ Anterior</button><span class="sub" id="pag"></span><button class="btn" id="next">Siguiente ›</button></div>
+      </div>
+    </section>
+
+    <section id="v-dashboard" class="oculto">
+      <div class="barra solo-movil"><button class="btn" data-filtros>Filtros</button></div>
+      <div class="kpis" id="kpis"></div>
+      <div class="graficos">
+        <div class="card grafico"><h3>Cierres en los próximos 14 días</h3><div class="desc">Procesos abiertos por día de cierre</div><div class="leyenda" data-ley></div><div id="g-cierres"></div></div>
+        <div class="card grafico"><h3>Publicados en los últimos 14 días</h3><div class="desc">Por fecha de publicación</div><div class="leyenda" data-ley></div><div id="g-publicados"></div></div>
+        <div class="card grafico"><h3>Por región</h3><div class="desc" id="desc-region">Cantidad de procesos abiertos</div><div id="g-region"></div></div>
+        <div class="card grafico"><h3>Top 10 organismos</h3><div class="desc" id="desc-org">Cantidad de procesos abiertos</div><div id="g-organismo"></div></div>
+        <div class="card grafico"><h3>Rango de monto</h3><div class="desc">Monto disponible informado por el comprador</div><div id="g-monto"></div></div>
+        <div class="card grafico"><h3>Modalidad</h3><div class="desc">L1, LE, LP… y COT (Compra Ágil)</div><div id="g-tipo"></div></div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="velo" id="velo"></div>
+<aside class="panel" id="panel" aria-label="Detalle"></aside>
+<div id="tip" role="tooltip"></div>
+
+<script>
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const CLP = new Intl.NumberFormat('es-CL',{style:'currency',currency:'CLP',maximumFractionDigits:0});
+const NUM = new Intl.NumberFormat('es-CL');
+const compacto = n => n>=1e9? (n/1e9).toLocaleString('es-CL',{maximumFractionDigits:1})+' mil M' : n>=1e6? (n/1e6).toLocaleString('es-CL',{maximumFractionDigits:1})+' M' : NUM.format(n);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fecha = iso => iso ? new Date(iso).toLocaleString('es-CL',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'}) : '—';
+const ORIGEN = {licitacion:['Licitación','var(--s-lic)'], compra_agil:['Compra Ágil','var(--s-ca)']};
+let OPC = null, pagina = 1, tab = 'buscador', origen = 'todos';
+
+async function api(ruta, params){
+  const r = await fetch('api/' + ruta + (params ? '?' + params : ''));
+  if(!r.ok) throw new Error((await r.json().catch(()=>({}))).error || r.statusText);
+  return r.json();
+}
+
+function params(extra={}){
+  const p = new URLSearchParams();
+  const set = (k,v) => { if(v!==undefined && v!==null && String(v).trim()!=='') p.set(k,v); };
+  if($('#f-perfil').checked) set('perfil', $('#perfil-nombre').textContent);
+  set('origen', origen);
+  set('q', $('#f-q').value);
+  set('giros', $$('#f-giros input:checked').map(i=>i.value).join(','));
+  set('regiones', $$('#f-regiones input:checked').map(i=>i.value).join(','));
+  set('tipos', $('#f-tipos').value);
+  set('monto_min', $('#f-min').value); set('monto_max', $('#f-max').value);
+  set('organismo', $('#f-org').value);
+  set('cierre_desde', $('#f-desde').value); set('cierre_hasta', $('#f-hasta').value);
+  set('excluir', $('#f-excluir').value);
+  if($('#f-solorubro').checked) p.set('solo_rubro','1');
+  for(const [k,v] of Object.entries(extra)) set(k,v);
+  return p.toString();
+}
+
+function estadoIndice(ix){
+  if(!ix) return;
+  $('#estado').textContent = `Índice: ${NUM.format(ix.licitaciones)} licitaciones (${NUM.format(ix.licitaciones_con_detalle)} con detalle) · ${NUM.format(ix.compras_agiles)} Compras Ágiles`;
+}
+
+/* ---------- buscador ---------- */
+async function buscar(){
+  $('#total').textContent = 'Buscando…';
+  try{
+    const d = await api('buscar', params({orden:$('#orden').value, pagina, por_pagina:25}));
+    estadoIndice(d.indice);
+    $('#total').textContent = `${NUM.format(d.total)} procesos`;
+    $('#total-sub').textContent = d.total ? `mostrando ${(d.pagina-1)*d.por_pagina+1}–${Math.min(d.pagina*d.por_pagina,d.total)}` : '';
+    $('#vacio').classList.toggle('oculto', d.total>0);
+    $('#filas').innerHTML = d.resultados.map(r => {
+      const [ol,oc] = ORIGEN[r.origen];
+      const urg = r.dias_al_cierre!==null && r.dias_al_cierre<=2;
+      const dias = r.dias_al_cierre===null ? '' : r.dias_al_cierre===0 ? 'hoy' : r.dias_al_cierre<0 ? 'cerrado' : `en ${r.dias_al_cierre} d`;
+      return `<tr data-codigo="${esc(r.codigo)}">
+        <td><div class="nombre">${esc(r.nombre)}</div>
+            <div class="sub"><span class="chip"><span class="dot" style="background:${oc}"></span>${ol}${r.tipo&&r.origen==='licitacion'?' '+esc(r.tipo):''}</span> ${esc(r.codigo)}</div>
+            <div class="sub org-m">${esc(r.organismo||'')}</div></td>
+        <td>${esc(r.organismo)}<div class="sub">${esc(r.region||'')}</div></td>
+        <td class="num">${r.monto!=null?CLP.format(r.monto):'<span class="sub">No informado</span>'}</td>
+        <td><div class="dias ${urg?'urg':''}">${dias}</div><div class="sub">${fecha(r.fecha_cierre)}</div></td>
+        <td class="sub">${(r.motivos||[]).map(esc).join('<br>')}</td></tr>`;
+    }).join('');
+    $('#pag').textContent = d.total ? `Página ${d.pagina} de ${Math.max(1,Math.ceil(d.total/d.por_pagina))}` : '';
+    $('#prev').disabled = d.pagina<=1;
+    $('#next').disabled = d.pagina*d.por_pagina >= d.total;
+  }catch(e){ $('#total').textContent = 'Error: ' + e.message; }
+}
+
+/* ---------- detalle ---------- */
+async function abrir(codigo){
+  const pnl = $('#panel');
+  pnl.innerHTML = '<p class="sub">Cargando…</p>';
+  pnl.classList.add('abierto'); $('#velo').style.display='block';
+  try{
+    const p = await api('proceso/' + encodeURIComponent(codigo));
+    const [ol,oc] = ORIGEN[p.origen];
+    const c = p.comprador || {};
+    const fila = (k,v) => v!==undefined && v!==null && v!=='' ? `<dt>${k}</dt><dd>${v}</dd>` : '';
+    pnl.innerHTML = `
+      <button class="btn" id="cerrar" style="float:right">Cerrar</button>
+      <span class="chip"><span class="dot" style="background:${oc}"></span>${ol} ${esc(p.tipo||'')}</span>
+      <h2>${esc(p.nombre)}</h2><div class="sub">${esc(p.codigo)} · ${esc(p.estado||'')}</div>
+      <div class="links">
+        <a class="btn primario" href="${esc(p.url_ficha)}" target="_blank" rel="noopener noreferrer">Abrir ficha en Mercado Público</a>
+        <button class="btn" id="btn-adj">Enlace a adjuntos</button>
+      </div>
+      <div id="adj" class="sub"></div>
+      <dl>
+        ${fila('Organismo', esc(c.organismo))}${fila('Unidad', esc(c.unidad))}${fila('Región', esc(c.region))}
+        ${fila('Monto', p.monto!=null && p.monto_visible!==false ? CLP.format(p.monto) : 'No informado')}
+        ${fila('Publicación', fecha(p.fecha_publicacion))}${fila('Cierre', fecha(p.fecha_cierre) + (p.dias_al_cierre!=null?` (${p.dias_al_cierre} d)`:''))}
+        ${fila('Fin preguntas', p.fecha_fin_preguntas && fecha(p.fecha_fin_preguntas))}
+        ${fila('Adjudicación', p.fecha_adjudicacion && fecha(p.fecha_adjudicacion))}
+        ${fila('Entrega', esc(p.direccion_entrega))}${fila('Plazo entrega', p.plazo_entrega_dias!=null ? p.plazo_entrega_dias+' días' : '')}
+        ${fila('Ofertas recibidas', p.total_ofertas)}${fila('Convocatoria', esc(p.convocatoria))}
+      </dl>
+      ${p.descripcion?`<h4>Descripción</h4><p>${esc(p.descripcion)}</p>`:''}
+      ${(p.items||[]).length?`<h4>Productos (${p.items.length})</h4><ul>${p.items.slice(0,30).map(i=>`<li>${esc(i.nombre||i.descripcion)}${i.cantidad?` — ${NUM.format(i.cantidad)} ${esc(i.unidad||'')}`:''} <span class="sub">${esc(i.codigo_onu||'')}</span></li>`).join('')}</ul>`:''}
+      ${(p.documentos||[]).length?`<h4>Documentos</h4><ul>${p.documentos.map(x=>`<li>${esc(x.nombre)}</li>`).join('')}</ul>`:''}
+      ${p.detalle_completo===false?'<p class="sub">Este proceso aún no tiene el detalle completo en el índice.</p>':''}
+      <p class="sub">Los adjuntos se descargan desde la ficha (ChileCompra pide captcha). Para analizarlos, súbelos a Claude.</p>`;
+    $('#cerrar').onclick = cerrar;
+    $('#btn-adj').onclick = async () => {
+      $('#adj').textContent = 'Buscando enlace…';
+      try{ const a = await api('adjuntos/' + encodeURIComponent(codigo));
+        $('#adj').innerHTML = a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">Abrir adjuntos</a>` : 'No se encontró el enlace; usa la ficha.';
+      }catch(e){ $('#adj').textContent = 'No se pudo obtener: ' + e.message; }
+    };
+  }catch(e){ pnl.innerHTML = `<button class="btn" id="cerrar">Cerrar</button><p>${esc(e.message)}</p>`; $('#cerrar').onclick = cerrar; }
+}
+function cerrar(){ $('#panel').classList.remove('abierto'); $('#velo').style.display='none'; }
+
+/* ---------- dashboard ---------- */
+const tip = $('#tip');
+document.addEventListener('mousemove', e => {
+  const t = e.target.closest('[data-tip]');
+  if(!t){ tip.style.display='none'; return; }
+  tip.innerHTML = t.dataset.tip; tip.style.display='block';
+  const x = Math.min(e.clientX+12, innerWidth - tip.offsetWidth - 8);
+  tip.style.left = x+'px'; tip.style.top = (e.clientY+14)+'px';
+});
+
+function leyenda(){
+  return `<span><i style="background:var(--s-lic)"></i>Licitaciones</span><span><i style="background:var(--s-ca)"></i>Compras Ágiles</span>`;
+}
+function columnas(serie, etiqueta){
+  const max = Math.max(1, ...serie.map(d => d.licitacion + d.compra_agil));
+  const cols = serie.map(d => {
+    const t = d.licitacion + d.compra_agil, f = new Date(d.fecha+'T12:00');
+    const tipTxt = `<b>${f.toLocaleDateString('es-CL',{weekday:'short',day:'numeric',month:'short'})}</b><br>Licitaciones: ${d.licitacion}<br>Compras Ágiles: ${d.compra_agil}`;
+    const segs = [['licitacion','var(--s-lic)'],['compra_agil','var(--s-ca)']].filter(([k]) => d[k]>0);
+    return `<div class="col" data-tip="${esc(tipTxt)}">${segs.map(([k,c],i) =>
+      `<div class="seg-b ${i===segs.length-1?'top':''}" style="height:${d[k]/max*100}%;background:${c}"></div>`).join('')}
+      ${t?`<span class="val" style="bottom:${t/max*100}%;top:auto;margin-bottom:2px">${t}</span>`:''}</div>`;
+  }).join('');
+  const ejes = serie.map((d,i) => `<span>${i%2===0 ? etiqueta(new Date(d.fecha+'T12:00')) : ''}</span>`).join('');
+  return `<div class="cols">${cols}</div><div class="ejes">${ejes}</div>`;
+}
+function barras(filas, nombre, valor, extra){
+  if(!filas.length) return '<div class="sub">Sin datos</div>';
+  const max = Math.max(1, ...filas.map(valor));
+  return filas.map(f => `<div class="hbar" data-tip="${esc(`<b>${esc(nombre(f))}</b><br>${NUM.format(valor(f))} procesos${extra?extra(f):''}`)}">
+    <span class="n">${esc(nombre(f))}</span><span class="track"><span class="bar" style="display:block;width:${valor(f)/max*100}%"></span></span><span class="c">${NUM.format(valor(f))}</span></div>`).join('');
+}
+async function dashboard(){
+  $('#kpis').innerHTML = '<div class="sub">Calculando…</div>';
+  try{
+    const d = await api('estadisticas', params());
+    estadoIndice(d.indice);
+    const k = d.kpis;
+    const kpi = (v,l) => `<div class="card kpi"><div class="v">${v}</div><div class="l">${l}</div></div>`;
+    $('#kpis').innerHTML = kpi(NUM.format(k.total),'Procesos abiertos') + kpi(NUM.format(k.licitaciones),'Licitaciones')
+      + kpi(NUM.format(k.compras_agiles),'Compras Ágiles') + kpi('$'+compacto(k.monto_total),'Monto informado')
+      + kpi(NUM.format(k.cierran_hoy),'Cierran hoy') + kpi(NUM.format(k.cierran_7_dias),'Cierran en 7 días')
+      + kpi(NUM.format(k.publicadas_hoy),'Publicados hoy') + kpi(NUM.format(k.organismos),'Organismos');
+    $$('[data-ley]').forEach(e => e.innerHTML = leyenda());
+    const dia = f => f.toLocaleDateString('es-CL',{day:'numeric',month:'numeric'});
+    $('#g-cierres').innerHTML = columnas(d.cierres_por_dia, dia);
+    $('#g-publicados').innerHTML = columnas(d.publicadas_por_dia, dia);
+    const conMonto = f => f.monto ? `<br>Monto: $${compacto(f.monto)}` : '';
+    const sd = k.sin_detalle ? ` · ${NUM.format(k.sin_detalle)} aún sin detalle (no se cuentan)` : '';
+    $('#desc-region').textContent = 'Cantidad de procesos abiertos' + sd;
+    $('#desc-org').textContent = 'Cantidad de procesos abiertos' + sd;
+    $('#g-region').innerHTML = barras(d.por_region, f=>f.nombre.replace('Región ','').replace('del ','').replace('de ',''), f=>f.total, conMonto);
+    $('#g-organismo').innerHTML = barras(d.por_organismo, f=>f.nombre, f=>f.total, conMonto);
+    $('#g-monto').innerHTML = barras(d.rangos_monto, f=>f.rango, f=>f.total);
+    $('#g-tipo').innerHTML = barras(d.por_tipo, f=>f.tipo, f=>f.total);
+  }catch(e){ $('#kpis').innerHTML = `<div class="sub">Error: ${esc(e.message)}</div>`; }
+}
+
+/* ---------- eventos ---------- */
+function refrescar(){ tab==='buscador' ? buscar() : dashboard(); }
+function aplicar(){ pagina = 1; refrescar(); if(innerWidth<=900) $('aside.card').classList.remove('visible'); }
+$$('[data-filtros]').forEach(b => b.onclick = () => { $('aside.card').classList.toggle('visible'); $('aside.card').scrollIntoView({behavior:'smooth'}); });
+$$('.tabs button').forEach(b => b.onclick = () => {
+  tab = b.dataset.tab;
+  $$('.tabs button').forEach(x => x.setAttribute('aria-selected', x===b));
+  $('#v-buscador').classList.toggle('oculto', tab!=='buscador');
+  $('#v-dashboard').classList.toggle('oculto', tab!=='dashboard');
+  refrescar();
+});
+$$('#f-origen button').forEach(b => b.onclick = () => {
+  origen = b.dataset.v; $$('#f-origen button').forEach(x => x.setAttribute('aria-pressed', x===b)); aplicar();
+});
+$('#aplicar').onclick = aplicar;
+$('aside').addEventListener('keydown', e => { if(e.key==='Enter' && e.target.tagName==='INPUT') aplicar(); });
+$('#f-perfil').onchange = aplicar; $('#f-solorubro').onchange = aplicar; $('#f-tipos').onchange = aplicar;
+$('#orden').onchange = aplicar;
+$('#limpiar').onclick = () => {
+  $$('aside input[type=text],aside input[type=number],aside input[type=date]').forEach(i => i.value='');
+  $$('#f-giros input,#f-regiones input').forEach(i => i.checked=false);
+  $('#f-tipos').value=''; $('#f-solorubro').checked=false; $('#f-perfil').checked=true;
+  $$('#f-origen button')[0].click();
+  resumenRegiones();
+};
+$('#prev').onclick = () => { pagina--; buscar(); };
+$('#next').onclick = () => { pagina++; buscar(); };
+$('#filas').onclick = e => { const tr = e.target.closest('tr[data-codigo]'); if(tr) abrir(tr.dataset.codigo); };
+$('#velo').onclick = cerrar;
+document.addEventListener('keydown', e => { if(e.key==='Escape') cerrar(); });
+function resumenRegiones(){
+  const n = $$('#f-regiones input:checked').length;
+  $('#reg-resumen').textContent = n ? `${n} seleccionada${n>1?'s':''}` : 'Todo Chile';
+}
+
+(async function init(){
+  try{
+    OPC = await api('opciones');
+    estadoIndice(OPC.indice);
+    const perfil = Object.keys(OPC.perfiles)[0];
+    if(perfil){ $('#perfil-nombre').textContent = perfil;
+      $('#perfil-ayuda').textContent = 'Giros: ' + OPC.perfiles[perfil].giros.join(', '); }
+    else { $('#f-perfil').checked = false; $('#f-perfil').disabled = true; }
+    $('#f-giros').innerHTML = OPC.giros.map(g => `<label class="check"><input type="checkbox" value="${esc(g)}"> ${esc(g)}</label>`).join('');
+    $('#f-regiones').innerHTML = OPC.regiones.map(r => `<label class="check"><input type="checkbox" value="${r.codigo}"> ${esc(r.nombre)}</label>`).join('');
+    $('#f-regiones').onchange = resumenRegiones;
+    $('#f-tipos').innerHTML += OPC.tipos.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
+  }catch(e){ $('#estado').textContent = 'Error al cargar: ' + e.message; }
+  buscar();
+})();
+</script>
+</body>
+</html>

@@ -31,6 +31,11 @@ from mp_core.models import CompraAgil, Licitacion, Organismo
 
 log = logging.getLogger(__name__)
 
+# httpx registra cada URL en nivel INFO, y la API v1 exige el ticket como parámetro de la URL:
+# se silencia para que el ticket nunca llegue a los logs (CloudWatch, consola).
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("httpcore").setLevel(logging.WARNING)
+
 BASE_COMPRA_AGIL = "https://api2.mercadopublico.cl"
 REINTENTABLES = {429, 500, 502, 503, 504}
 
